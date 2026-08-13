@@ -6,7 +6,8 @@
 
 ## Executive Summary
 
-Human Resources teams need more than employee records to make informed workforce decisions. They need a reliable view of **who is in the organization, where employees are concentrated, how compensation varies, where performance concerns exist, and where employee exits are occurring**.
+Human Resources teams need more than employee records to make informed workforce decisions. They need a reliable view of 
+**who is in the organization, where employees are concentrated, how compensation varies, where performance concerns exist, and where employee exits are occurring**.
 
 This project analyzes an Apex Bank employee dataset containing **2,080 employee records across 20 fields** and transforms the raw HR data into an interactive Power BI reporting solution.
 
@@ -28,7 +29,6 @@ The result is not simply a collection of charts. It is an HR business intelligen
 # Business Challenge
 
 A workforce dataset can contain valuable information while still being difficult to use for decision-making.
-
 In the Apex Bank dataset, employee information was affected by several quality issues before analysis, including:
 
 * Inconsistent gender representations
@@ -85,13 +85,13 @@ The objective was to create a reporting environment where HR stakeholders can ex
 
 The executive page provides the high-level workforce picture, combining headline KPIs with department, grade, salary, attrition, gender, and performance analysis.
 
-![Apex Bank Executive Dashboard](images/apex_dashboard_1.png)
+![Apex Bank Executive Dashboard](images/ApexBank.png)
 
 ### Executive Dashboard — Visual Interaction
 
 The dashboard supports interactive filtering by department, gender, employment type, and grade level.
 
-![Apex Bank Dashboard Interactive View](images/ApexBank_2.png)
+![Apex Bank Dashboard Interactive View](images/apex_dashboard.png)
 
 ---
 
@@ -99,7 +99,7 @@ The dashboard supports interactive filtering by department, gender, employment t
 
 The workforce analysis page provides deeper operational analysis of tenure, leave utilization, attrition, female representation, and low performance.
 
-![Apex Bank Workforce Details](images/workforce_details_2.png)
+![Apex Bank Workforce Details](images/workforce_details.png)
 
 ---
 
@@ -107,7 +107,7 @@ The workforce analysis page provides deeper operational analysis of tenure, leav
 
 The data-quality page documents the issues identified during preparation and the actions taken to improve the analytical dataset.
 
-![Apex Bank Data Quality Analysis](images/data_quality_2.png)
+![Apex Bank Data Quality Analysis](images/data_quality.png)
 
 ---
 
@@ -115,7 +115,7 @@ The data-quality page documents the issues identified during preparation and the
 
 The detailed quality analysis shows the number of records affected by each identified issue and the percentage of the dataset involved.
 
-![Data Quality Impact Analysis](images/row_affected_2.png)
+![Data Quality Impact Analysis](images/row_affected.png)
 
 ---
 
@@ -123,7 +123,7 @@ The detailed quality analysis shows the number of records affected by each ident
 
 Power Query was used to clean and standardize the source data before it was used for reporting.
 
-![Power Query Transformation](images/apexBank_powerquery_2.png)
+![Power Query Transformation](images/apexBank_powerquery.png)
 
 ---
 
@@ -131,7 +131,7 @@ Power Query was used to clean and standardize the source data before it was used
 
 The applied-steps view documents the sequence of transformations used during data preparation.
 
-![Power Query Applied Steps](images/properties1_2.png)
+![Power Query Applied Steps](images/properties1.png)
 
 ---
 
@@ -272,22 +272,9 @@ Without standardization, Power BI would treat different spellings and formats as
 
 Department values contained variations such as:
 
-* HR
-* H.R
-* Human Resource
-* Human Resources
-* IT
-* I.T
-* ICT
-* Operations
-* Ops
-* Operation
-* Finance
-* Fin
-* Accounts
-* Finance & Accounts
-* Corporate Banking
-* Corp Banking
+* HR, * H.R, * Human Resource, * Human Resources, * IT, * I.T, * ICT
+* Operations, * Ops, * Operation, * Finance, * Fin, * Accounts
+* Finance & Accounts, * Corporate Banking, * Corp Banking
 
 The cleaning process standardized department labels for reporting.
 
@@ -321,12 +308,7 @@ Important date fields include:
 
 Gross salary contained formatting and value problems including:
 
-* Commas
-* Invalid characters
-* Null values
-* Negative values
-* Zero values
-* Values requiring numeric conversion
+* Commas , * Invalid characters, * Null values, * Negative values, * Zero values, * Values requiring numeric conversion
 
 The salary field was cleaned and converted into a numeric representation for analysis.
 
@@ -480,7 +462,7 @@ then a dedicated Calendar dimension would be appropriate.
 
 # 1. Executive Workforce Dashboard
 
-![Executive Workforce Dashboard](images/apex_dashboard_1.png)
+![Executive Workforce Dashboard](images/apex_dashboard.png)
 
 ### Purpose
 
@@ -539,7 +521,7 @@ This page is designed to answer:
 
 The executive dashboard also provides interactive filtering.
 
-![Interactive Dashboard](images/ApexBank_2.png)
+![Interactive Dashboard](images/ApexBank.png)
 
 ### Filters
 
@@ -560,7 +542,7 @@ Instead of producing separate reports for every department or employee segment, 
 
 # 3. Workforce Details
 
-![Apex Bank Workforce Details](images/workflow_details_2.png)
+![Apex Bank Workforce Details](images/workflow_details.png)
 
 ### Purpose
 
@@ -593,7 +575,7 @@ This page allows HR teams to move from **"what is happening?"** to **"where shou
 
 # 4. Data Quality Dashboard
 
-![Data Quality Dashboard](images/data_quality_2.png)
+![Data Quality Dashboard](images/data_quality.png)
 
 ### Purpose
 
@@ -617,7 +599,7 @@ For HR reporting, this is important because a technically correct Power BI calcu
 
 # 5. Data Quality Impact
 
-![Data Quality Impact](images/row_affected_2.png)
+![Data Quality Impact](images/row_affected.png)
 
 This view provides a more detailed comparison of the number of records affected by major quality issues.
 
@@ -636,7 +618,7 @@ The analysis makes it possible to prioritize data-governance improvements based 
 
 # 6. Power Query Transformation
 
-![Power Query Transformation](images/apexBank_powerquery_2.png)
+![Power Query Transformation](images/apexBank_powerquery.png)
 
 The Power Query workflow shows how raw employee information was transformed before being consumed by the Power BI report.
 
@@ -654,7 +636,7 @@ Key transformations included:
 
 # 7. Transformation Workflow
 
-![Applied Power Query Steps](images/properties1_2.png)
+![Applied Power Query Steps](images/properties1.png)
 
 The applied-steps view documents the sequence of transformations used to prepare the employee dataset.
 
@@ -1194,11 +1176,9 @@ My work focuses on **Excel, SQL, Power BI, Power Query, DAX, data cleaning, data
 I am interested in building practical analytics solutions that connect technical analysis with real business decisions.
 
 ### Connect With Me
-
-* **GitHub:** [Your GitHub Profile](YOUR_GITHUB_URL)
-* **LinkedIn:** [Your LinkedIn Profile](YOUR_LINKEDIN_URL)
-* **Portfolio:** [Your Portfolio](YOUR_PORTFOLIO_URL)
-* **Email:** [Your Email](YOUR_EMAIL)
+* **LinkedIn:** [Your LinkedIn Profile](linkedin/zacchtech)
+* **Portfolio:** [Your Portfolio](alade-zacch.vercel.app)
+* **Email:** [Your Email](aladezaccheous52@gmail.com)
 
 ---
 
