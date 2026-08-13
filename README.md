@@ -1,8 +1,7 @@
 # Apex Bank HR Workforce Analytics
 
 > **A Power BI workforce intelligence solution for understanding employee composition, compensation, performance, tenure, attrition, leave utilization, and underlying data quality.**
-
----
+-
 
 ## Executive Summary
 
@@ -444,7 +443,7 @@ then a dedicated Calendar dimension would be appropriate.
 
 ### Model View
 
-![Power BI Data Model](images/model_relationship_view.png)
+![Power BI Data Model]
 
 > *Relationship View placeholder — add the exported Power BI Model/Relationship View screenshot here if you want to document the model structure.*
 
@@ -753,8 +752,7 @@ followed by:
 * Corporate Banking — 3.02
 
 These results identify departmental differences that can be investigated further.
-
----
+-
 
 ## 5. Low Performance Is Concentrated in Specific Departments
 
@@ -798,7 +796,7 @@ The largest issue categories included:
 
 This demonstrates that the analytical challenge was not simply visualization. A substantial part of the work involved preparing the data so that workforce metrics could be interpreted consistently.
 
----
+-
 
 # Business Recommendations
 
@@ -819,7 +817,7 @@ HR should investigate these departments further using additional information suc
 
 The current dataset identifies **where** attrition is concentrated but does not establish **why** employees leave.
 
----
+-
 
 ## 2. Review Compensation Across Grade Levels
 
@@ -831,7 +829,7 @@ HR could compare individual salaries against approved grade-level salary bands t
 * Potential salary anomalies
 * Employees outside expected compensation ranges
 
----
+-
 
 ## 3. Investigate Low-Performance Concentrations
 
@@ -846,7 +844,7 @@ Further investigation could consider:
 * Tenure
 * Employee development
 
----
+-
 
 ## 4. Strengthen HR Data Governance
 
@@ -862,7 +860,7 @@ Priority areas include:
 * Employee-status rules
 * Salary validation
 
----
+-
 
 ## 5. Introduce Automated Data Validation
 
@@ -877,7 +875,7 @@ Future HR reporting pipelines could automatically flag:
 
 This would reduce the amount of manual data cleaning required before reporting.
 
----
+-
 
 # Technical Highlights
 
@@ -946,7 +944,7 @@ The report is structured to move from:
 
 This allows stakeholders to first understand the workforce, then investigate specific patterns, while maintaining visibility into the quality of the underlying data.
 
----
+-
 
 # Skills Demonstrated
 
@@ -977,7 +975,7 @@ This allows stakeholders to first understand the workforce, then investigate spe
 * Interactive Reporting
 * Analytical Visualization
 
----
+-
 
 # Challenges Encountered
 
@@ -989,7 +987,7 @@ The raw dataset contained multiple representations of the same categories.
 
 Power Query transformations were used to standardize categorical fields before analysis.
 
----
+-
 
 ## Mixed Date Formats
 
@@ -999,7 +997,7 @@ Date fields were represented using multiple formats.
 
 Dates were cleaned and converted into consistent date types before being used for tenure and employee-lifecycle analysis.
 
----
+-
 
 ## Salary Anomalies
 
@@ -1009,7 +1007,7 @@ Gross salary contained formatting problems, invalid characters, missing values, 
 
 The salary field was cleaned and converted to a numeric format for analysis, while anomalous values were identified for review.
 
----
+-
 
 ## Conflicting Employee Status Information
 
@@ -1019,7 +1017,7 @@ Some employees were classified as Active while also having an Exit Date.
 
 The conflict was explicitly identified as a data-quality issue rather than allowing the inconsistency to remain hidden.
 
----
+-
 
 ## Invalid Performance Ratings
 
@@ -1038,7 +1036,7 @@ The raw dataset contains 2,080 records but only 2,000 unique Employee IDs.
 
 Employee ID uniqueness was identified as an important validation requirement because employee-level KPIs can be distorted by duplicate records.
 
----
+-
 
 ## Balancing Detail with Executive Readability
 
@@ -1064,25 +1062,22 @@ Introduce historical snapshots to analyze:
 * Promotion trends
 * Attrition trends
 
----
+
 
 ## Calendar Dimension
 
 Add a dedicated date table to support more advanced time-based analysis.
 
----
-
 ## Low-Performance Rate
 
 Extend the existing low-performance analysis from employee counts to standardized departmental rates.
-
----
+-
 
 ## Salary Band Analysis
 
 Introduce approved salary ranges by grade and identify employees outside expected compensation bands.
 
----
+-
 
 ## Automated Data Quality Monitoring
 
@@ -1105,7 +1100,7 @@ Introduce role-based access so departmental managers can view only the workforce
 
 Connect the reporting solution to a centralized HR data source or cloud data platform for automated refreshes.
 
----
+-
 
 ## Predictive & Advanced Analytics
 
