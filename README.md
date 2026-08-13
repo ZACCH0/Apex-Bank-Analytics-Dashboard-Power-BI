@@ -1,4 +1,4 @@
-# Apex Bank HR Workforce Analytics
+# Apex Bank Workforce Intelligence Dashboard
 
 > **A Power BI workforce intelligence solution for understanding employee composition, compensation, performance, tenure, attrition, leave utilization, and underlying data quality.**
 -
