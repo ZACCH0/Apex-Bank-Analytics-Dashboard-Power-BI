@@ -24,8 +24,6 @@ The project also includes a dedicated **Data Quality Analysis** layer that ident
 
 The result is not simply a collection of charts. It is an HR business intelligence solution designed to help stakeholders move from **raw employee data → validated information → workforce analysis → management insight**.
 
----
-
 # Business Challenge
 
 A workforce dataset can contain valuable information while still being difficult to use for decision-making.
@@ -77,8 +75,6 @@ The objective was to create a reporting environment where HR stakeholders can ex
 * Create a dedicated data-quality reporting page.
 * Present analytical findings through business-oriented visualizations.
 
----
-
 # Dashboard Preview
 
 ## Executive Workforce Dashboard
@@ -99,7 +95,7 @@ The dashboard supports interactive filtering by department, gender, employment t
 
 The workforce analysis page provides deeper operational analysis of tenure, leave utilization, attrition, female representation, and low performance.
 
-![Apex Bank Workforce Details](images/workforce_details.png)
+![Apex Bank Workforce Details](images/workflow_details.png)
 
 ---
 
@@ -176,8 +172,7 @@ A dedicated location for DAX measures used throughout the report.
 **`Data_Quality_Summary`**
 
 A supporting table used to report identified data-quality issues and remediation actions.
-
----
+--
 
 # Business Understanding
 
@@ -207,7 +202,7 @@ The analysis can support decisions such as:
 
 The dashboard is intended to support **investigation and decision-making**, not to establish causal explanations that are not present in the dataset.
 
----
+--
 
 # Project Workflow
 
@@ -239,7 +234,7 @@ The workflow emphasizes an important principle:
 
 > **Reliable business intelligence starts with reliable data.**
 
----
+-
 
 # Data Cleaning & Transformation
 
@@ -266,7 +261,6 @@ These were standardized into consistent analytical categories.
 
 Without standardization, Power BI would treat different spellings and formats as different categories, producing fragmented workforce counts.
 
----
 
 ## 2. Department Standardization
 
@@ -280,8 +274,7 @@ The cleaning process standardized department labels for reporting.
 
 **Data Quality Issue:** 112 department naming inconsistencies were identified.
 
----
-
+-
 ## 3. Date Cleaning
 
 The dataset contained dates represented in different formats, including:
@@ -302,8 +295,7 @@ Important date fields include:
 
 **Data Quality Issue:** 1,580 records were identified with mixed date formatting.
 
----
-
+-
 ## 4. Gross Salary Cleaning
 
 Gross salary contained formatting and value problems including:
@@ -316,7 +308,7 @@ The salary field was cleaned and converted into a numeric representation for ana
 
 Because salary is a financial field, unusual values should be validated against the source system before being treated as legitimate compensation.
 
----
+-
 
 ## 5. Performance Rating Validation
 
@@ -332,7 +324,7 @@ The following were therefore identified as invalid:
 
 This affected **59 records**.
 
----
+-
 
 ## 6. Annual Leave Validation
 
@@ -340,7 +332,7 @@ The analysis identified **66 employees with more than 25 annual leave days used*
 
 These records were flagged for HR review rather than being automatically assumed to be valid or invalid without reference to the underlying leave policy.
 
----
+-
 
 ## 7. Email Validation
 
@@ -348,7 +340,7 @@ The dataset contained **803 invalid email formats**.
 
 The cleaning process standardized email formatting where possible and identified invalid records requiring correction or review.
 
----
+-
 
 ## 8. Phone Validation
 
@@ -356,7 +348,7 @@ The dataset contained **522 invalid phone-number records**.
 
 Power Query transformations were used to trim, clean, and standardize phone values.
 
----
+-
 
 ## 9. Employee Status and Exit-Date Validation
 
@@ -364,7 +356,7 @@ The analysis identified **52 records where an employee was marked Active while a
 
 This represents a logical business-rule conflict and was specifically addressed in the data-quality workflow.
 
----
+-
 
 ## 10. Duplicate Employee IDs
 
@@ -382,7 +374,7 @@ This distinction is particularly important for:
 
 because duplicate employee records can distort employee-level KPIs.
 
----
+-
 
 # Data Quality Summary
 
@@ -404,7 +396,7 @@ The project identified the following data-quality issues:
 
 > **Important:** These percentages represent issue occurrences, not the percentage of unique employees affected. A single employee can contribute to multiple quality issues, so the percentages should not be summed to produce an overall "bad data" percentage.
 
----
+-
 
 # Data Modeling
 
@@ -456,7 +448,6 @@ then a dedicated Calendar dimension would be appropriate.
 
 > *Relationship View placeholder — add the exported Power BI Model/Relationship View screenshot here if you want to document the model structure.*
 
----
 
 # Dashboard Walkthrough
 
@@ -514,8 +505,7 @@ Allows management to compare performance levels across departments.
 This page is designed to answer:
 
 > **"What is the current state of the workforce, and where should management look first?"**
-
----
+-
 
 # 2. Interactive Workforce Dashboard
 
@@ -571,7 +561,7 @@ Provide deeper operational analysis beyond the executive summary.
 
 This page allows HR teams to move from **"what is happening?"** to **"where should we investigate?"**
 
----
+-
 
 # 4. Data Quality Dashboard
 
@@ -595,7 +585,7 @@ This page provides transparency around the reliability of the analytical dataset
 
 For HR reporting, this is important because a technically correct Power BI calculation can still produce an incorrect business conclusion if the underlying data is inconsistent.
 
----
+-
 
 # 5. Data Quality Impact
 
@@ -614,7 +604,7 @@ The largest recorded issue categories include:
 
 The analysis makes it possible to prioritize data-governance improvements based on the scale of the issue.
 
----
+-
 
 # 6. Power Query Transformation
 
@@ -632,8 +622,7 @@ Key transformations included:
 * Status updates
 * Data-type conversion
 
----
-
+-
 # 7. Transformation Workflow
 
 ![Applied Power Query Steps](images/properties1.png)
@@ -642,7 +631,7 @@ The applied-steps view documents the sequence of transformations used to prepare
 
 This provides an auditable transformation trail from the source data to the analytical dataset.
 
----
+-
 
 # Business Questions Answered
 
@@ -669,7 +658,7 @@ The completed dashboard addresses questions including:
 19. Which data-quality issues affect the largest number of records?
 20. What actions were taken to improve the analytical dataset?
 
----
+-
 
 # KPIs
 
@@ -706,7 +695,7 @@ Senior employees represent the largest displayed active grade category.
 
 This provides HR with a useful workforce-composition baseline when considering staffing and grade-level distribution.
 
----
+-
 
 ## 2. Compensation Increases Substantially with Grade Level
 
@@ -724,7 +713,6 @@ The Director average is approximately **7.5 times** the Junior average.
 
 This demonstrates a strong relationship between organizational grade and average compensation in the analyzed data.
 
----
 
 ## 3. Overall Attrition Is Relatively Low but Concentrated in Specific Departments
 
@@ -745,7 +733,6 @@ The highest displayed departmental attrition rates are:
 
 This suggests that attrition should not be evaluated only at organization level. HR should investigate the departments with higher rates individually.
 
----
 
 ## 4. Performance Varies Across Departments
 
@@ -782,7 +769,7 @@ The workforce-details page shows the largest counts of employees rated 1 or 2 in
 
 These are **counts rather than rates**, so they should be interpreted alongside department headcount before concluding that one department performs worse than another.
 
----
+-
 
 ## 6. Female Representation Differs Across Departments
 
@@ -796,7 +783,7 @@ to:
 
 This indicates that gender composition is not identical across departments and provides a basis for further workforce-composition analysis.
 
----
+-
 
 ## 7. Data Quality Was a Significant Part of the Project
 
@@ -1042,7 +1029,6 @@ The raw performance field contained ratings outside the expected 1–5 scale.
 
 Ratings outside the expected range were identified as invalid and addressed in the data-quality workflow.
 
----
 
 ## Duplicate Employee IDs
 
@@ -1062,15 +1048,11 @@ HR data can produce many possible metrics, but including every available metric 
 
 The report prioritizes a focused set of workforce KPIs and analytical visuals that connect directly to workforce planning, compensation, performance, attrition, tenure, and leave.
 
----
-
 # Future Improvements
 
 ## Predictive Attrition Analysis
 
 Build a predictive model to identify employees with higher probability of attrition using additional employee attributes and historical outcomes.
-
----
 
 ## Historical Workforce Trends
 
@@ -1113,13 +1095,11 @@ Create automated validation rules that flag:
 * Invalid contact information
 * Invalid performance ratings
 
----
 
 ## Row-Level Security
 
 Introduce role-based access so departmental managers can view only the workforce information relevant to their area.
 
----
 
 ## Cloud Integration
 
@@ -1138,8 +1118,6 @@ Future versions could incorporate:
 * Performance risk analysis
 
 These enhancements would require additional data beyond the current dataset.
-
----
 
 # Conclusion
 
@@ -1165,8 +1143,7 @@ The project also highlights an important principle of business intelligence:
 
 By combining **Power Query, DAX, data validation, Power BI modeling, visualization, and business analysis**, this project demonstrates the ability to turn imperfect HR data into a structured reporting solution that can support management investigation and workforce decision-making.
 
----
-
+--
 # About the Author
 
 **ZacchTech** is a Computer Science student and aspiring Data Analyst focused on transforming raw data into meaningful business insights through data analytics and business intelligence.
