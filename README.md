@@ -3,6 +3,10 @@
 > **An interactive Power BI solution for analyzing workforce composition, compensation, performance, tenure, attrition, leave utilization, and HR data quality..**
 -
 
+
+## Project Tools
+
+`Power BI` · `Power Query` · `DAX` · `Data Cleaning` · `Data Storytelling` · `Data Visualization` · `Business Intelligence` · `HR Analytics`
 ## Executive Summary
 
 Human Resources teams need more than employee records to make informed workforce decisions. They need a reliable view of 
@@ -1151,9 +1155,3 @@ I am interested in building practical analytics solutions that connect technical
 * **LinkedIn:** [Your LinkedIn Profile](linkedin/zacchtech)
 * **Portfolio:** [Your Portfolio](alade-zacch.vercel.app)
 * **Email:** [Your Email](aladezaccheous52@gmail.com)
-
----
-
-## Project Tools
-
-`Power BI` · `Power Query` · `DAX` · `Data Cleaning` · `Data Quality` · `Data Visualization` · `Business Intelligence` · `HR Analytics`
