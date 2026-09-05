@@ -1145,7 +1145,7 @@ By combining **Power Query, DAX, data validation, Power BI modeling, visualizati
 --
 # About the Author
 
-**ZacchTech** is a Computer Science student and aspiring Data Analyst focused on transforming raw data into meaningful business insights through data analytics and business intelligence.
+**ZACCH** is a Computer Science student and aspiring Data Analyst focused on transforming raw data into meaningful business insights through data analytics and business intelligence.
 
 My work focuses on **Excel, SQL, Power BI, Power Query, DAX, data cleaning, data visualization, and analytical problem-solving**.
 
